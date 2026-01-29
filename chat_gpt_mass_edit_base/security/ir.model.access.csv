@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_chatgpt_model,access_chatgpt_model,model_chatgpt_model,base.group_user,1,1,1,1
+access_chat_gpt_mixin,access_chat_gpt_mixin,model_chat_gpt_mass_edit_base_mixin,base.group_user,1,1,1,1
+access_gpt_wizard,access_gpt_wizard,model_gpt_wizard,base.group_user,1,1,1,1
+access_gpt_wizard_translate,access_gpt_wizard_translate,model_gpt_wizard_translate,base.group_user,1,1,1,1

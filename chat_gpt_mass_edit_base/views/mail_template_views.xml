@@ -1,0 +1,25 @@
+<odoo>
+
+    <record id="email_template_form" model="ir.ui.view">
+        <field name="name">email.template.form.inherited.chat_gpt_mass_edit_base</field>
+        <field name="model">mail.template</field>
+        <field name="inherit_id" ref="mail.email_template_form" />
+        <field name="arch" type="xml">
+            <!-- -->
+            <xpath expr="//header/button" position="after">
+                <button
+                    name="open_chat_gpt_wizard"
+                    string="Chat GPT Mass Edit"
+                    type="object"
+                    class="btn-primary"
+                />
+                <button
+                    name="translate_template"
+                    string="Translate templates"
+                    type="object"
+                    class="btn-primary"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

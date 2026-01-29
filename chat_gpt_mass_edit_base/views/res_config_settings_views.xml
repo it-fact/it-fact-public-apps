@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.project</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="50" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app
+                    data-string="ChatGTP"
+                    string="ChatGTP"
+                    name="chat_gpt_mass_edit_base"
+                >
+                    <block title="ChatGTP" id="tasks_management">
+                        <setting
+                            id="use_odoo_default"
+                            help="Choose if you want to use the default odoo chat gpt endpoint or your own."
+                        >
+                            <field name="use_odoo_default" />
+                        </setting>
+                        <div invisible="use_odoo_default">
+                            <setting
+                                id="openapi_api_key"
+                                help="Provide your own Endpoint"
+                            >
+                                <field name="openapi_api_key" />
+                            </setting>
+                            <setting
+                                id="chatgpt_model_id"
+                                help="Select which chatgpt model you would like to use. Only valid with your own API Access."
+                            >
+                                <field name="chatgpt_model_id" />
+                            </setting>
+                            <setting id="org_id" help="Org ID">
+                                <field name="org_id" />
+                            </setting>
+
+                            <setting id="project" help="Project ID">
+                                <field name="project" />
+                                <setting
+                                    id="dummy_mode"
+                                    help="This mode allows you to test things with your own response."
+                                >
+                                    <field name="dummy_mode" />
+                                </setting>
+                            </setting>
+                            <setting
+                                id="dummy_value"
+                                invisible="not dummy_mode"
+                                help="Here you can enter your own response in the dummy mode."
+                            >
+                                <field name="dummy_value" />
+                            </setting>
+                        </div>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

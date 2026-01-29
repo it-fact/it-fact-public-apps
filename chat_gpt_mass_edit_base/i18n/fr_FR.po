@@ -1,0 +1,483 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* chat_gpt_mass_edit_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-12 12:32+0000\n"
+"PO-Revision-Date: 2024-12-12 12:33\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"X-Generator: Odoo Auto Translate Core\n"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__openapi_api_key
+msgid "API Key"
+msgstr "Clé API"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_translation_form
+msgid "Additional Features"
+msgstr "Fonctionnalités supplémentaires"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__advanced_settings
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__advanced_settings
+msgid "Advanced Settings"
+msgstr "Paramètres avancés"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_translation_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.actions.server,name:chat_gpt_mass_edit_base.action_open_my_wizard
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.product_template_form_view
+msgid "Chat GPT Mass Edit"
+msgstr "Modification de masse du chat GPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_chatgpt_model
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__chatgpt_model_id
+msgid "ChatGPT Model"
+msgstr "Modèle ChatGPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid "ChatGTP"
+msgstr "ChatGTP"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid ""
+"Choose if you want to use the default odoo chat gpt endpoint or your own."
+msgstr ""
+"Choisissez si vous souhaitez utiliser le point de terminaison GPT de chat "
+"Odoo par défaut ou le vôtre."
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_gpt_wizard
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_gpt_wizard_translate
+msgid "Create Mass Edits of ChatGPT promts"
+msgstr "Créer des modifications en masse des invites ChatGPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__create_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__create_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__create_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__create_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__create_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__create_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__create_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__create_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__create_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__create_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__create_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__create_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__current_lang
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__current_lang
+msgid "Current Language"
+msgstr "Langue actuelle"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_chat_gpt_mass_edit_base_mixin
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_chat_gpt_mass_edit_base_transient_mixin
+msgid "Description"
+msgstr "Description"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__display_name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__display_name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__display_name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__display_name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__display_name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__display_name
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__dummy_mode
+msgid "DummyFashion"
+msgstr "Mode factice"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__dummy_value
+msgid "DummyValue"
+msgstr "Valeur factice"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__dynamic_chat_gpt_info
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__dynamic_chat_gpt_info
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__dynamic_chat_gpt_info
+msgid "Dynamic Chat Gpt Info"
+msgstr "Informations sur le chat dynamique Gpt"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__error_message
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__error_message
+msgid "Error Message"
+msgstr "Message d'erreur"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__gpt_field_to_map_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__gpt_field_for_input_image
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__gpt_field_to_map_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__gpt_field_for_input_image
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__gpt_field_to_map_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__gpt_field_for_input_image
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__gpt_field_to_map_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__gpt_field_to_map_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__gpt_field_to_map_answer
+msgid "Field to map answer"
+msgstr "Champ pour mapper la réponse"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__gpt_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__gpt_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__gpt_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__gpt_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__gpt_answer
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__gpt_answer
+msgid "GPT Answer"
+msgstr "Réponse GPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__gpt_question
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__gpt_question
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__gpt_question
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__gpt_question
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__gpt_question
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__gpt_question
+msgid "GPT Question"
+msgstr "Question GPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__gpt_question_template
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__gpt_question_template
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__gpt_question_template
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__gpt_question_template
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__gpt_question_template
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__gpt_question_template
+msgid "GPT Question Template"
+msgstr "Modèle de question GPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.actions.act_window,name:chat_gpt_mass_edit_base.gpt_translation_wizard_action
+#: model:ir.actions.act_window,name:chat_gpt_mass_edit_base.gpt_wizard_action
+msgid "GPT Wizard"
+msgstr "Assistant GPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+msgid "Get Result from GPT"
+msgstr "Obtenir le résultat de GPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid "Here you can enter your own response in the dummy mode."
+msgstr "Ici, vous pouvez saisir votre propre réponse en mode factice."
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__id
+msgid "ID"
+msgstr "IDENTIFIANT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields.selection,name:chat_gpt_mass_edit_base.selection__gpt_wizard__type_of_prompt__image
+#: model:ir.model.fields.selection,name:chat_gpt_mass_edit_base.selection__gpt_wizard_translate__type_of_prompt__image
+msgid "Image Analysis"
+msgstr "Analyse d'image"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+msgid "Image Input"
+msgstr "Entrée d'image"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__write_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__write_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__write_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__write_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__write_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__write_uid
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__write_uid
+msgid "Last Updated by"
+msgstr "Mis à jour par"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__write_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__write_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chatgpt_model__write_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__write_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__write_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__write_date
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__write_date
+msgid "Last Updated on"
+msgstr "Date de rédaction"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__res_model_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__res_model_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__res_model_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__res_model_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_product__res_model_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_product_template__res_model_id
+msgid "Model"
+msgstr "Modèle"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__old_type_of_prompt
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__old_type_of_prompt
+msgid "Old Type Of Prompt"
+msgstr "Ancien type d'invite"
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_transient_mixin.py:0
+msgid "Oops, it looks like our AI is unreachable!"
+msgstr "Oups, il semblerait que notre IA soit inaccessible !"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__org_id
+msgid "Org"
+msgstr "Organisation"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid "Org ID"
+msgstr "ID d'organisation"
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/wizard/chat_gpt_mass_edit_base_translation_wizard.py:0
+msgid "Please select a target language"
+msgstr "Veuillez sélectionner une langue cible"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_product_template
+msgid "Product"
+msgstr "Produit"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model,name:chat_gpt_mass_edit_base.model_product_product
+msgid "Product Variant"
+msgstr "Variante de produit"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__project
+msgid "Project"
+msgstr "Projet"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid "Project ID"
+msgstr "ID du projet"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_res_config_settings__openapi_api_key
+msgid "Provide the API key here"
+msgstr "Fournissez la clé API ici"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid "Provide your own Endpoint"
+msgstr "Fournissez votre propre point de terminaison"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields.selection,name:chat_gpt_mass_edit_base.selection__gpt_wizard__type_of_prompt__question
+#: model:ir.model.fields.selection,name:chat_gpt_mass_edit_base.selection__gpt_wizard_translate__type_of_prompt__question
+msgid "Question"
+msgstr "Question"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__records_effected
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__records_effected
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__records_effected
+msgid "Records Effected"
+msgstr "Enregistrements effectués"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__sample_product_template_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__sample_product_template_id
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__sample_product_template_id
+msgid "Sample Product Template"
+msgstr "Modèle d'échantillon de produit"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_translation_form
+msgid "Sample for testing"
+msgstr "Échantillon pour test"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid ""
+"Select which chatgpt model you would like to use. Only valid with your own "
+"API Access."
+msgstr ""
+"Sélectionnez le modèle chatgpt que vous souhaitez utiliser. Valable "
+"uniquement avec votre propre accès API."
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+msgid "Settings"
+msgstr "Paramètres"
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_transient_mixin.py:0
+msgid "Sorry, we could not generate a response. Please try again later."
+msgstr ""
+"Désolé, nous n'avons pas pu générer de réponse. Veuillez réessayer plus "
+"tard."
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_transient_mixin.py:0
+msgid "Sorry, your prompt is too long. Try to say it in fewer words."
+msgstr ""
+"Désolé, votre message est trop long. Essayez de le dire en moins de mots."
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__system_message
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__system_message
+msgid "System Message"
+msgstr "Message système"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__lang
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__lang
+msgid "Target Language"
+msgstr "Langue cible"
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_mixin.py:0
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_transient_mixin.py:0
+msgid "There is no api key supplied"
+msgstr "Aucune clé API n'est fournie"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_mixin__gpt_question_template
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_chat_gpt_mass_edit_base_transient_mixin__gpt_question_template
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_gpt_wizard__gpt_question_template
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_gpt_wizard_translate__gpt_question_template
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_product_product__gpt_question_template
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_product_template__gpt_question_template
+msgid ""
+"This is the template for your chat gpt question, add field names in this "
+"model with {{title}}"
+msgstr ""
+"Ceci est le modèle pour votre question de chat gpt, ajoutez les noms de "
+"champs dans ce modèle avec {{title}}"
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.res_config_settings_view_form
+msgid "This mode allows you to test things with your own response."
+msgstr "Ce mode vous permet de tester des choses avec votre propre réponse."
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_translation_form
+msgid "Translate"
+msgstr "Traduire"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.actions.server,name:chat_gpt_mass_edit_base.action_open_my_wizard_translate
+msgid "Translate with ChatGPT"
+msgstr "Traduire avec ChatGPT"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields.selection,name:chat_gpt_mass_edit_base.selection__gpt_wizard__type_of_prompt__translation
+#: model:ir.model.fields.selection,name:chat_gpt_mass_edit_base.selection__gpt_wizard_translate__type_of_prompt__translation
+msgid "Translation"
+msgstr "Traduction"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard__type_of_prompt
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_gpt_wizard_translate__type_of_prompt
+msgid "Type of Prompt"
+msgstr "Type d'invite"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,field_description:chat_gpt_mass_edit_base.field_res_config_settings__use_odoo_default
+msgid "Use Odoo Default"
+msgstr "Utiliser Odoo par défaut"
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_res_config_settings__use_odoo_default
+msgid ""
+"Use the odoo default with IAP. If you need more queries or advanced features"
+" like image analytics you have to provide your own Chat GPT API Credentials."
+msgstr ""
+"Utilisez la valeur par défaut d'Odoo avec IAP. Si vous avez besoin de "
+"davantage de requêtes ou de fonctionnalités avancées telles que l'analyse "
+"d'images, vous devez fournir vos propres informations d'identification d'API"
+" Chat GPT."
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_transient_mixin.py:0
+msgid ""
+"You choose the odoo default chatgpt, you can not use images. Please add your"
+" own chatgpt developer account in the settings to use this feature."
+msgstr ""
+"Vous choisissez le chatgpt par défaut d'Odoo, vous ne pouvez pas utiliser "
+"d'images. Veuillez ajouter votre propre compte de développeur chatgpt dans "
+"les paramètres pour utiliser cette fonctionnalité."
+
+#. module: chat_gpt_mass_edit_base
+#. odoo-python
+#: code:addons/chat_gpt_mass_edit_base/models/chat_gpt_transient_mixin.py:0
+msgid ""
+"You have reached the maximum number of requests for this service. Try again "
+"later."
+msgstr ""
+"Vous avez atteint le nombre maximum de demandes pour ce service. Veuillez "
+"réessayer ultérieurement."
+
+#. module: chat_gpt_mass_edit_base
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_gpt_wizard__current_lang
+#: model:ir.model.fields,help:chat_gpt_mass_edit_base.field_gpt_wizard_translate__current_lang
+msgid ""
+"is the current language of the user. If you want to translate a different "
+"language change the user language to the source language."
+msgstr ""
+"est la langue actuelle de l'utilisateur. Si vous souhaitez traduire une "
+"autre langue, remplacez la langue de l'utilisateur par la langue source."
+
+#. module: chat_gpt_mass_edit_base
+#: model_terms:ir.ui.view,arch_db:chat_gpt_mass_edit_base.chat_gpt_mass_edit_base_wizard_form
+msgid "promptly"
+msgstr "rapidement"

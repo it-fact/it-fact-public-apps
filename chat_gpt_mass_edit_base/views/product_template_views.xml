@@ -1,0 +1,49 @@
+<odoo>
+
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field
+            name="name"
+        >product.template.product.website.form.inherited.chat_gpt_mass_edit_base</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <!-- add state field in header -->
+            <xpath
+                expr="//page[@name='sales']//group[@name='description']"
+                position="before"
+            >
+                <group>
+                    <button
+                        name="open_chat_gpt_wizard"
+                        string="Chat GPT Mass Edit"
+                        type="object"
+                        class="btn-primary"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_open_my_wizard" model="ir.actions.server">
+        <field name="name">Chat GPT Mass Edit</field>
+        <field name="model_id" ref="model_product_template" />
+        <field name="binding_model_id" ref="model_product_template" />
+        <field
+            name="state"
+        >code</field>        <!-- Specifies that the action executes Python code -->
+        <field name="code">
+            action = records.open_chat_gpt_wizard()
+        </field>
+    </record>
+    <record id="action_open_my_wizard_translate" model="ir.actions.server">
+        <field name="name">Translate with ChatGPT</field>
+        <field name="model_id" ref="model_product_template" />
+        <field name="binding_model_id" ref="model_product_template" />
+        <field
+            name="state"
+        >code</field>        <!-- Specifies that the action executes Python code -->
+        <field name="code">
+            action = records.open_chat_gpt_wizard_translate()
+        </field>
+    </record>
+</odoo>

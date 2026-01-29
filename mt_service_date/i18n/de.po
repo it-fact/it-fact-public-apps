@@ -1,0 +1,96 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mt_service_date
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-01 14:16+0000\n"
+"PO-Revision-Date: 2025-11-01 14:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mt_service_date
+#. odoo-python
+#: code:addons/mt_service_date/models/account_move_line.py:0
+msgid "%(start_date)s to %(end_date)s"
+msgstr "%(start_date)s bis %(end_date)s"
+
+#. module: mt_service_date
+#: model_terms:ir.ui.view,arch_db:mt_service_date.report_invoice_document
+msgid "<span>Service Date</span>"
+msgstr "<span>Leistungsdatum</span>"
+
+#. module: mt_service_date
+#: model_terms:ir.ui.view,arch_db:mt_service_date.report_invoice_document
+msgid "<strong>Service Date</strong>"
+msgstr "<strong>Leistungsdatum</strong>"
+
+#. module: mt_service_date
+#: model:ir.model.fields,help:mt_service_date.field_product_product__service_date_only_months
+#: model:ir.model.fields,help:mt_service_date.field_product_template__service_date_only_months
+msgid ""
+"If checked, only the month and year will be considered for service dates."
+msgstr ""
+"Wenn aktiviert, werden nur Monat und Jahr für Leistungsdaten berücksichtigt."
+
+#. module: mt_service_date
+#: model:ir.model,name:mt_service_date.model_account_move
+msgid "Journal Entry"
+msgstr "Journalbuchung"
+
+#. module: mt_service_date
+#: model:ir.model,name:mt_service_date.model_account_move_line
+msgid "Journal Item"
+msgstr "Buchungszeile"
+
+#. module: mt_service_date
+#: model:ir.model.fields,field_description:mt_service_date.field_account_bank_statement_line__mixed_service_dates
+#: model:ir.model.fields,field_description:mt_service_date.field_account_move__mixed_service_dates
+msgid "Mixed Service Dates"
+msgstr "Gemischte Leistungsdaten"
+
+#. module: mt_service_date
+#: model:ir.model,name:mt_service_date.model_product_template
+msgid "Product"
+msgstr "Produkt"
+
+#. module: mt_service_date
+#: model:ir.model,name:mt_service_date.model_product_product
+msgid "Product Variant"
+msgstr "Produktvariante"
+
+#. module: mt_service_date
+#: model:ir.model.fields,field_description:mt_service_date.field_account_bank_statement_line__refresh
+#: model:ir.model.fields,field_description:mt_service_date.field_account_move__refresh
+#: model:ir.model.fields,field_description:mt_service_date.field_account_move_line__refresh
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#. module: mt_service_date
+#: model:ir.model.fields,field_description:mt_service_date.field_account_bank_statement_line__service_date_invoice_text
+#: model:ir.model.fields,field_description:mt_service_date.field_account_move__service_date_invoice_text
+#: model:ir.model.fields,field_description:mt_service_date.field_account_move_line__service_date_invoice_text
+msgid "Service Date"
+msgstr "Leistungsdatum"
+
+#. module: mt_service_date
+#: model_terms:ir.ui.view,arch_db:mt_service_date.product_template_form_view
+msgid "Service Date Options"
+msgstr "Leistungsdatum-Optionen"
+
+#. module: mt_service_date
+#: model:ir.model.fields,field_description:mt_service_date.field_account_move_line__service_date_show_on_lines
+msgid "Service Date Show On Lines"
+msgstr "Leistungsdatum in Zeilen anzeigen"
+
+#. module: mt_service_date
+#: model:ir.model.fields,field_description:mt_service_date.field_product_product__service_date_only_months
+#: model:ir.model.fields,field_description:mt_service_date.field_product_template__service_date_only_months
+msgid "Service Date in Months"
+msgstr "Leistungszeitraum in Monaten"

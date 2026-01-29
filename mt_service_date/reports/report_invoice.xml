@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='informations']" position="inside">
+            <!--t-if="o.invoice_date_due and o.move_type == 'out_invoice' and o.state == 'posted'"-->
+            <div t-if="not o.mixed_service_dates" class="col" name="service_date">
+                <strong>Service Date</strong>
+                <div t-field="o.service_date_invoice_text" />
+            </div>
+        </xpath>
+        <xpath expr="//th[@name='th_priceunit']" position="after">
+            <th
+                t-if="o.mixed_service_dates"
+                name="th_service_date_invoice_text"
+                class="text-end"
+            >
+                <span>Service Date</span>
+            </th>
+        </xpath>
+        <xpath expr="//td[@name='td_taxes']" position="before">
+            <td
+                t-if="line.service_date_show_on_lines"
+                name="td_service_date_invoice_text"
+                t-att-class="padding_class"
+            >
+                <!--t-out="service_date_invoice_text"-->
+                <span
+                    t-field="line.service_date_invoice_text"
+                    t-options="{'widget': 'text'}"
+                    id="service_date_invoice_text"
+                />
+            </td>
+        </xpath>
+    </template>
+</odoo>
