@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="report_saleorder_document"
+        inherit_id="sale.report_saleorder_document"
+        priority="100"
+    >
+        <xpath expr="//div" position="after">
+            <t t-set="no_phone_on_sales_order" t-value="True" />
+        </xpath>
+
+        <!--
+        Did all not work not clear, fixed with modifying the widget
+        <xpath expr="//t[@t-set='address']" position="replace">
+            <t t-set="information_block">
+                <strong>
+                    <t t-if="doc.partner_shipping_id == doc.partner_invoice_id">
+                        Invoicing and Shipping Address
+                    </t>
+                    <t t-else="">
+                        Invoicing Address
+                    </t>
+                </strong>
+                <div t-field="doc.partner_invoice_id"
+                    t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True, "phone_icons": True}'/>
+                <t t-if="doc.partner_shipping_id != doc.partner_invoice_id">
+                    <strong class="d-block mt-3">Shipping Address</strong>
+                    <div t-field="doc.partner_shipping_id"
+                        t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True, "phone_icons": True}'/>
+                </t>
+            </t>
+        </xpath>
+        -->
+
+        <!--
+        <xpath expr="//div[@t-field='doc.partner_invoice_id']" position="attributes">
+            <attribute
+                name="t-options"
+            >{'widget': 'contact', 'fields': ['address', 'name'], 'no_marker': True}</attribute>
+        </xpath>
+        <xpath expr="//div[@t-field='doc.partner_shipping_id']" position="attributes">
+            <attribute
+                name="t-options"
+            >{"widget": "contact", "fields": ["address", "name"], "no_marker": True, "phone_icons": True}</attribute>
+        </xpath>
+
+        -->
+    </template>
+</odoo>
