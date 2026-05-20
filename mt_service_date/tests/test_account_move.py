@@ -31,14 +31,15 @@ class TestAccountMove(TransactionCase):
         )
 
         # Create sales journal
-        cls.sales_journal = cls.env["account.journal"].create(
-            {
-                "name": "Test Sales Journal",
-                "code": "TSALE",
-                "type": "sale",
-                "company_id": cls.company.id,
-            }
-        )
+        journal_vals = {
+            "name": "Test Sales Journal",
+            "code": "TSALE",
+            "type": "sale",
+            "company_id": cls.company.id,
+        }
+        if "nacha_entry_class_code" in cls.env["account.journal"]._fields:
+            journal_vals["nacha_entry_class_code"] = "CCD"
+        cls.sales_journal = cls.env["account.journal"].create(journal_vals)
 
         # Create test partner
         cls.partner = cls.env["res.partner"].create(

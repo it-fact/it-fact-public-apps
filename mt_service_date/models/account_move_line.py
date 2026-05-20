@@ -1,6 +1,7 @@
 import logging
 
 from odoo import _, api, fields, models
+from odoo.exceptions import ValidationError
 from odoo.tools.misc import format_date
 
 _logger = logging.getLogger(__name__)
@@ -28,23 +29,28 @@ class AccountMoveLine(models.Model):
     )
     service_date_show_on_lines = fields.Boolean(compute="_compute_service_date_show_on_lines", store=True)
 
+    @api.depends("move_id.mixed_service_dates")
     def _compute_service_date_show_on_lines(self):
         # If the invoice has mixed service dates, we show the service date on each line
         # otherwise we only show it on the invoice header
         for line in self:
             line.service_date_show_on_lines = line.move_id.mixed_service_dates
 
-    def format_with_only_months(self, line, start, end):
-        start_date = format_date(self.env, start, date_format="MMM YY")
-        end_date = format_date(self.env, end, date_format="MMM YY")
+    def format_with_only_months(self, line, start=None, end=None):
+        start = start or line.deferred_start_date or line.start_date
+        end = end or line.deferred_end_date or line.end_date
+        start_date = format_date(self.env, start, date_format="MMMM y")
+        end_date = format_date(self.env, end, date_format="MMMM y")
         if start_date == end_date:
-            return start_date
+            result = start_date
         else:
-            return self.env._(
+            result = self.env._(
                 "%(start_date)s to %(end_date)s",
                 start_date=start_date,
                 end_date=end_date,
             )
+        line.service_date_invoice_text = result
+        return result
 
     def create_string_from_both_dates(self, line):
         start_date = line.deferred_start_date or line.start_date
@@ -101,3 +107,11 @@ class AccountMoveLine(models.Model):
             else:
                 _logger.warning("There is an unexpected case in service date formatting.")
                 line.service_date_invoice_text = ""
+
+    @api.constrains("start_date", "end_date", "deferred_start_date", "deferred_end_date")
+    def _check_service_date_pairs(self):
+        for line in self:
+            start_date = line.deferred_start_date or line.start_date
+            end_date = line.deferred_end_date or line.end_date
+            if bool(start_date) != bool(end_date):
+                raise ValidationError(_("Start Date and End Date must be set together."))

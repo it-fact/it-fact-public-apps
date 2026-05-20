@@ -8,6 +8,10 @@
                 <div t-field="o.service_date_invoice_text" />
             </div>
         </xpath>
+        <xpath expr="//th[@name='th_priceunit']">
+            <attribute name="style">padding-left: 5px;</attribute>
+        </xpath>
+
         <xpath expr="//th[@name='th_priceunit']" position="after">
             <th
                 t-if="o.mixed_service_dates"

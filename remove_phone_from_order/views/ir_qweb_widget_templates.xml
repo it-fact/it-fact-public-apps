@@ -2,7 +2,7 @@
 <odoo>
     <template id="contact" inherit_id="base.contact" priority="99">
         <xpath
-            expr="//div[@class='d-flex align-items-center gap-1']"
+            expr="//div[hasclass('d-flex', 'align-items-center', 'gap-1')]"
             position="replace"
         >
             <!-- This removes the phone number from this widget,

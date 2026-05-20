@@ -3,10 +3,11 @@
     "summary": """
         Remove phone number from widget, + make font for shipping address bigger.""",
     "author": "it-fact GmbH",
-    "website": "https://github.com/OCA/odoo-pim",
+    "website": "https://github.com/it-fact/it-fact-apps",
     "category": "Uncategorized",
-    "version": "19.0.1.0",
+    "version": "19.0.1.2",
     "license": "OPL-1",
+    "price": 79.99,
     "depends": [
         "sale",
         "stock_delivery",

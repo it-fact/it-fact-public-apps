@@ -7,7 +7,7 @@
     "author": "mytime.click",
     "website": "https://github.com/OCA/partner-contact",
     "category": "Uncategorized",
-    "version": "19.0.1.0",
+    "version": "19.0.1.2",
     "price": 79.99,
     "license": "OPL-1",
     "depends": [
@@ -17,6 +17,6 @@
     "data": [
         "reports/report_invoice.xml",
         "views/account_move_views.xml",
-        "views/product_product_views.xml",
+        "views/product_template_views.xml",
     ],
 }
