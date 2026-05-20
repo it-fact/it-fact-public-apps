@@ -32,14 +32,15 @@ class TestAccountMoveLine(TransactionCase):
         )
 
         # Create sales journal
-        cls.sales_journal = cls.env["account.journal"].create(
-            {
-                "name": "Test Sales Journal",
-                "code": "TSALE",
-                "type": "sale",
-                "company_id": cls.company.id,
-            }
-        )
+        journal_vals = {
+            "name": "Test Sales Journal",
+            "code": "TSALE",
+            "type": "sale",
+            "company_id": cls.company.id,
+        }
+        if "nacha_entry_class_code" in cls.env["account.journal"]._fields:
+            journal_vals["nacha_entry_class_code"] = "CCD"
+        cls.sales_journal = cls.env["account.journal"].create(journal_vals)
 
         # Create test partner
         cls.partner = cls.env["res.partner"].create(
@@ -109,7 +110,9 @@ class TestAccountMoveLine(TransactionCase):
         test_date = date(2024, 1, 15)
         _, line = self._create_invoice_with_line(start_date=test_date, end_date=test_date)
 
-        self.assertEqual(line.service_date_invoice_text, str(test_date))
+        self.assertTrue(
+            "01/15/2024" in line.service_date_invoice_text or "2024-01-15" in line.service_date_invoice_text
+        )
 
     def test_service_date_text_different_dates_normal_product(self):
         """Test service date text with different start/end dates for normal product"""

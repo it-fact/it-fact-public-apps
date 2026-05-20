@@ -97,9 +97,10 @@ class ChatGPTMixinBase:
 
     def get_model_name(self):
         params = self.env["ir.config_parameter"].sudo()
-        modelid = params.get_param("chat_gpt_mass_edit_base.chatgpt_model_id")
-        model_id = self.env["chatgpt.model"].browse(int(modelid))
-        return model_id.name
+        model_id = params.get_param("chat_gpt_mass_edit_base.chatgpt_model_id")
+        if model_id:
+            return self.env["chatgpt.model"].browse(int(model_id)).name
+        return "gpt-4o"
 
     def get_client(self):
         params = self.env["ir.config_parameter"].sudo()
@@ -301,13 +302,13 @@ class ChatGPTMixinBase:
         api_key = ICP.get_param("chat_gpt_mass_edit_base.openapi_api_key")
         if not api_key:
             raise UserError(_("There is no api key supplied"))
-        gpt_model_id = ICP.get_param("chat_gpt_mass_edit_base.chatgpt_model")
-        gpt_model = "gpt-3.5-turbo"
+        gpt_model_id = ICP.get_param("chat_gpt_mass_edit_base.chatgpt_model_id")
+        gpt_model = "gpt-4o"
         try:
             if gpt_model_id:
                 gpt_model = self.env["chatgpt.model"].browse(int(gpt_model_id)).name
         except Exception:
-            gpt_model = "gpt-3.5-turbo"
+            gpt_model = "gpt-4o"
         try:
             if importlib.util.find_spec("openai") is None:
                 raise UserError(_("To use this feature it's necessary to install the openai package in python."))

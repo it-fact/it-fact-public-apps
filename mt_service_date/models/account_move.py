@@ -1,5 +1,4 @@
 from odoo import _, api, fields, models
-from odoo.tools.misc import format_date
 
 
 class AccountMove(models.Model):
@@ -10,8 +9,8 @@ class AccountMove(models.Model):
     refresh = fields.Boolean()
 
     @api.depends(
-        "line_ids.start_date",
-        "line_ids.end_date",
+        "invoice_line_ids.service_date_invoice_text",
+        "invoice_line_ids.product_id.type",
         "refresh",
         "invoice_date",
         "delivery_date",
@@ -19,15 +18,16 @@ class AccountMove(models.Model):
     def _compute_service_date_invoice_text(self):  # NOSONAR
         for record in self:
             record.mixed_service_dates = False
-            for _idx, move in enumerate(record.invoice_line_ids):
-                if _idx == 0:
-                    # For the first record, we initialize start and end
-                    record.service_date_invoice_text = move.service_date_invoice_text
-                elif record.service_date_invoice_text != move.service_date_invoice_text:
+            record.service_date_invoice_text = ""
+            first_line_id = record.invoice_line_ids[:1]
+            if not first_line_id:
+                continue
+            record.service_date_invoice_text = first_line_id.service_date_invoice_text
+            for line_id in record.invoice_line_ids[1:]:
+                if (
+                    line_id.service_date_invoice_text != first_line_id.service_date_invoice_text
+                    or line_id.product_id.type != first_line_id.product_id.type
+                ):
                     record.mixed_service_dates = True
-                    record.service_date_invoice_text = _("see positions")
+                    record.service_date_invoice_text = _("various service dates")
                     break
-                else:
-                    record.service_date_invoice_text = _("see positions")
-            # if there are no positions:
-            record.service_date_invoice_text = format_date(self.env, record.date) or ""

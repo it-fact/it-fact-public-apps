@@ -99,6 +99,8 @@ class ChatGPTMassEdit(models.TransientModel):
                 record.system_message = f"{default_system_message} Include the image in your answer."
             elif record.type_of_prompt == "question":
                 record.system_message = default_system_message
+            else:
+                record.system_message = default_system_message
 
     @api.model
     def _lang_get(self):

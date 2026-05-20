@@ -5,9 +5,9 @@
         Images from Products and other fields can be also sent to chat GPT to analyse.
         GPT can also be used to create images from dynamic field information.""",
     "author": "mytime.click",
-    "website": "https://apps.odoo.com/apps/modules/18.0/chat_gpt_mass_edit_base/",
+    "website": "https://apps.odoo.com/apps/modules/19.0/chat_gpt_mass_edit_base/",
     "category": "product",
-    "version": "19.0.1.0",
+    "version": "19.0.1.2",
     "license": "OPL-1",
     "depends": [
         "base",
