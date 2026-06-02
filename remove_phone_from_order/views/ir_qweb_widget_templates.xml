@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="contact" inherit_id="base.contact" priority="99">
+        <xpath
+            expr="//div[hasclass('d-flex','align-items-center','gap-1')]"
+            position="replace"
+        >
+            <!-- This removes the phone number from this widget,
+            we didn't found another way to remove it less invasive from the sale order.-->
+            <t t-if="False">
+                <div
+                    class="d-flex align-items-center gap-1"
+                    t-if="phone and 'phone' in fields"
+                >
+                    <i
+                        t-if="not options.get('no_marker') or options.get('phone_icons')"
+                        class='fa fa-phone fa-fw'
+                        role="img"
+                        aria-label="Phone"
+                        title="Phone"
+                    />
+                    <span class="o_force_ltr" itemprop="telephone" t-esc="phone" />
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

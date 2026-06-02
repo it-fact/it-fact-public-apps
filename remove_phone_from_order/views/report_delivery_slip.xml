@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="report_delivery_document2"
+        inherit_id="stock_delivery.report_delivery_document2"
+        priority="99"
+    >
+        <xpath expr="//div[@name='partner_header']/div" position="replace">
+            <p>
+                <strong>Delivery To:</strong>
+            </p>
+            <!--
+            <attribute name="t-options">{"widget": "contact", "fields": ["address", "name"], "no_marker": True, "phone_icons": True}</attribute>
+        -->
+        </xpath>
+    </template>
+</odoo>
