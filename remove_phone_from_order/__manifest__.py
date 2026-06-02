@@ -4,7 +4,7 @@
     "author": "it-fact GmbH",
     "website": "https://www.it-fact.com",
     "category": "Sales",
-    "version": "19.0.1.5",
+    "version": "19.0.1.6",
     "price": "20.00",
     "license": "OPL-1",
     "depends": [
